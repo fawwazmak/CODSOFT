@@ -1,0 +1,110 @@
+.about-left {
+    width: 50%
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+@media (max-width: 767px) {
+    .about-left {
+        width: 100%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+}
+
+.about-me {
+    background-color: #201E43;
+    color: white;
+}
+
+nav {
+    background-color: #201E43;
+}
+
+.cv-button {
+    border: 1px solid #134B70;
+}
+
+.cv-button:hover {
+    background-color: #134B70;
+    color: white;
+}
+
+
+
+.identity {
+    background: linear-gradient(to right, #8750f7, white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-image {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(5deg);
+    transition: transform 0.9s ease-in-out;
+}
+
+.hero-image:hover {
+    transform: rotate(0deg);
+}
+
+.hero-image img {
+    height: 100%;
+}
+
+.social-link {
+    border: 1px solid #134B70;
+}
+
+.social-link:hover {
+    background-color: #508C9B;
+    color: white;
+}
+
+
+.skill-section {
+    background-color: #134B70;
+}
+
+.project-section {
+    background-color: #180161;
+}
+
+
+.project-container {
+    background-color: #405d72;
+}
+
+.project-container:hover {
+    .project-cap {
+        display: block;
+    }
+}
+
+.project-cap {
+    background: linear-gradient(to right, #314757, #1d2b35);
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    display: none;
+    transition: transform 12s ease-in-out;
+}
+
+.form {
+    background-color: #201e43;
+}
+
+/* #508C9B */
