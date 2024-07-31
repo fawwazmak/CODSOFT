@@ -40,22 +40,98 @@ h3 {
 
 .cta {
     background-color: #191826;
+    position: relative;
+    height: 600px;
     background-image: url(images/bg-pattern-2.svg);
     background-repeat: no-repeat;
+    margin: 0 auto;
     background-position: center top;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
     margin-top: 15rem;
-    grid-template-columns: repeat(2, 1fr);
+    width: 1110px;
+    padding-inline: 30px;
+    border-radius: 15px;
 }
 
+
+.mobile-phone img {
+    width: 270px;
+    height: auto;
+    margin-bottom: 12rem;
+}
 
 .premium {
     background-color: #fa7453;
     border-radius: 10px;
-    padding: 15px;
+    padding: 45px;
     color: white;    
+    width: 400px;;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 12rem;
 }
 
+.premium p { 
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    margin-left: 25px;
+}
+
+.premium p span {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+button img {
+    transform: translateY(2px);
+    margin-right: 5px;
+}
+
+button:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.apple:hover {
+    color: #191826;
+    background-color: #66e2dc;
+}
+
+.android:hover {
+    background-color: #ffb964;
+}
+
+@media (max-width: 1150px) {
+    .cta {
+        gap: 0px;
+        margin: auto;
+        max-width: 1110px;
+    }
+    .premium {
+        margin: 0;
+        transform: translate(-45px, 200px);
+    }
+}
 
 @media (max-width: 800px) {
     .hero-left {
@@ -71,5 +147,13 @@ h3 {
     }
     h1 {
         font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 615px) {
+    .premium {
+        flex-direction: column;
+        margin-top: 330px;
     }
 }
