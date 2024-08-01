@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <div>
-        <nav className='d-flex flex-column flex-sm-row justify-content-between align-items-center text-light py-3 px-5 fw-medium border-bottom border-light'>
+        <nav className='d-flex flex-column position-sticky top-0  flex-sm-row justify-content-between align-items-center text-light py-3 px-5 fw-medium border-bottom border-light'>
           <img src={logoOnly} alt="logo" className='bg-light rounded-2 p-2' />
           <ul className='list-unstyled d-flex gap-sm-5 gap-2 mt-4 mt-sm-0'>
             <li><Link to="section1" duration={100}>About</Link></li>

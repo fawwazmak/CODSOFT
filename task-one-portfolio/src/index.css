@@ -29,6 +29,8 @@ h2 {
 
 nav {
     background-color: #201E43;
+    z-index: 10;
+    box-shadow: 2px 2px 15px white;
 }
 
 .cv-button {
